@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "FastVPN - Бесплатный VPN и Прокси",
+  "version": "1.0.0",
+  "description": "FastVPN - расширение для получения актуальных бесплатных V2Ray/VLESS подписок и прокси. Обход блокировок без сбоев.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "FastVPN"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "proxy"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
